@@ -1,0 +1,9 @@
+pyinputplus
+requests
+bs4
+selenium
+send2trash
+openpyxl
+ezsheets
+PyPDF2
+python-docx

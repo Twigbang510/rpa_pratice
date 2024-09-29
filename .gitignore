@@ -1,0 +1,5 @@
+credentials-sheets.json
+.venv
+__pycache__
+images
+*.pickle
