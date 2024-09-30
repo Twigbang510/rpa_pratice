@@ -11,6 +11,12 @@ from chapter13 import *
 from chapter14 import *
 from chapter15 import *
 from chapter16 import *
+from chapter17 import *
+from chapter18 import *
+from chapter19 import *
+import json
+with open('config.json', 'r') as config_file:
+    config = json.load(config_file)
 
 list_methods = ListMethods()
 # list_methods.append_to_list()
@@ -61,8 +67,8 @@ text = "My phone number is 0999-323-333 and 334-533-3432. Contact me at example@
 ################################
 url = 'https://automatetheboringstuff.com'
 img_url = 'https://automatetheboringstuff.com/images/cover_automate2_thumb.jpg'
-content = download_web_page(url)
-soup = parse_html(content)
+# content = download_web_page(url)
+# soup = parse_html(content)
 # display_page_preview(content)
 # parse_html(content)
 # element = find_elements_by_class(soup,'a')
@@ -112,6 +118,42 @@ data = [
 # read_csv('test.csv')
 # write_csv('test.csv', [['Name', 'Age', 'City'], ['Alice', 30, 'New York'], ['Bob', 25, 'Los Angeles']])
 # write_csv_as_dict('test.csv', headers, data)
-read_json('test.json')
+# read_json('test.json')
 # write_json('test.json', {'Name': 'Eve', 'Age': 29, 'City': 'San Francisco'})
 # update_json('test.json', 'Age', 222)
+
+##################################
+# get_current_time()
+# datetime_operations()
+# countdown_timer(13)
+# current_time = datetime.datetime.now()
+# one_minute_later = (current_time + datetime.timedelta(minutes=1)).strftime("%H:%M")
+# print(f"Setting alarm for 1 minute later: {one_minute_later}")
+# alarm_clock(one_minute_later)
+
+################################################################
+sender_email = config["email"]["sender_email"]
+sender_password = config["email"]["sender_password"]
+recipient_email = config["email"]["recipient_email"]
+recipient_name = ""
+subject_email = 'Test Subject'
+message_text = """ Hello from
+
+This is a test email using Python's smtplib library.
+
+Best regards,
+"""
+# send_email(sender_email, sender_password, recipient_email,subject_email,message_text)
+# check_inbox(sender_email,sender_password)
+
+################################################################
+# open_and_view_image('test.jpg')
+# create_new_image()
+img_path = 'test.jpg'
+# image_processor = ImageProcessor(img_path)
+# image_processor.rotate_image()
+
+# draw_image = ImageDrawer(img_path)
+# draw_image.draw_rectangle()
+
+# add_watermark(img_path, 'Test Watermark')

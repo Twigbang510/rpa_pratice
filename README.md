@@ -1,3 +1,6 @@
+Dưới đây là phiên bản cập nhật của `README.md`, bao gồm hướng dẫn về việc sử dụng tệp cấu hình (`config.example.json`):
+
+```markdown
 ### README.md
 
 # Automate the Boring Stuff with Python - Self-Learning Project
@@ -8,10 +11,11 @@ This project is designed for self-learners practicing Python automation tasks in
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
+- [Configuration](#configuration)
 - [Contributing](#contributing)
 
 ## Introduction
-This project contains Python scripts corresponding to various chapters from "Automate the Boring Stuff with Python.". You can import these files into `main.py` and test their functions to get hands-on experience with RPA (Robotic Process Automation) tasks.
+This project contains Python scripts corresponding to various chapters from "Automate the Boring Stuff with Python." You can import these files into `main.py` and test their functions to get hands-on experience with RPA (Robotic Process Automation) tasks.
 
 ## Prerequisites
 - Python 3.x
@@ -25,6 +29,20 @@ This project contains Python scripts corresponding to various chapters from "Aut
    ```
 3. For Google Sheets integration (Chapter 14), download the `credentials.json` file from the Google Cloud Console and place it in the root directory of your project.
 
+## Configuration
+1. A sample configuration file `config.example.json` is provided to store email credentials and other sensitive information.
+2. Before running the scripts, create a copy of `config.example.json` and rename it to `config.json`.
+3. Open `config.json` and fill in your email credentials:
+   ```json
+   {
+       "email": {
+           "sender_email": "your_email@example.com",
+           "sender_password": "your_password",
+           "recipient_email": "recipient_email@example.com"
+       }
+   }
+   ```
+   Make sure to keep `config.json` safe and do **not** share it publicly, as it contains sensitive information.
 
 ## Contributing
 This project is for self-study purposes. Feel free to modify and experiment with the scripts to suit your learning objectives.
