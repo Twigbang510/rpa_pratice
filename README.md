@@ -1,6 +1,4 @@
-Dưới đây là phiên bản cập nhật của `README.md`, bao gồm hướng dẫn về việc sử dụng tệp cấu hình (`config.example.json`):
 
-```markdown
 ### README.md
 
 # Automate the Boring Stuff with Python - Self-Learning Project
