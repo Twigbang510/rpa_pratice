@@ -14,6 +14,7 @@ from chapter16 import *
 from chapter17 import *
 from chapter18 import *
 from chapter19 import *
+from chapter20 import *
 import json
 with open('config.json', 'r') as config_file:
     config = json.load(config_file)
@@ -157,3 +158,6 @@ img_path = 'test.jpg'
 # draw_image.draw_rectangle()
 
 # add_watermark(img_path, 'Test Watermark')
+
+################################
+# show_prompt()
